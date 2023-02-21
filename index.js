@@ -33,7 +33,7 @@ return inquirer.prompt ([
       message: 'Please write a short description of your project',
     },
     {
-      type: 'checkbox',
+      type: 'list',
       name: 'license',
       message: 'What kind of license should your project have?',
       choices: ['MIT', 
