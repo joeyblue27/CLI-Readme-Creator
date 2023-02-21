@@ -12,11 +12,6 @@ return inquirer.prompt ([
     message: "What is the name of your project?",
     name: "project"
 },
-{
-  type: "input",
-  message: "What are the steps required to install your project?",
-  name: "installation"
-},
     {
       type: 'input',
       name: 'email',
@@ -46,11 +41,13 @@ return inquirer.prompt ([
       type: 'input',
       name: 'installation',
       message: 'What command should be run to install dependencies?',
+      default: 'npm i',
     },
     {
       type: 'input',
       name: 'test',
       message: 'What command should be run to run tests?',
+      default: 'npm test',
      
     },
     {
@@ -71,13 +68,8 @@ return inquirer.prompt ([
   
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
-  fs.writeFile(fileName, data, function(err) {
-      if (err) {
-          console.error(err);
-          return ;
-      }
-      console.log("Success!");
-  });
+  fs.writeFile(fileName, data, function(){});
+  console.log('Creating Readme File');
 }
 // TODO: Create a function to initialize app
 function init() {

@@ -38,27 +38,27 @@ function generateMarkdown({license, project, description, installation, usage, c
   return `# 
   
   ${project}
-${lb}
-## Description
-${description}
-## Table of Contents
-* [Installation](#installation)
-* [Usage](#usage)
-* [Contributing](#contributing)
-* [Tests](#tests)
-* [Questions](#questions)
-## Installation
-${ll}
-${installation}
-## Usage
-${usage}
-## Contributing
-${contributing}
-## Tests
-${test}
-## Questions
-${ls}
-
+  # Description
+  ${description}
+  ## Table of Contents
+  * [Installation](#installation)
+  * [Usage](#usage)
+  * [Contributing](#contributing)
+  * [Tests](#tests)
+  * [Questions](#questions)
+  ## Installation
+  ${installation}
+  ## Usage
+  ${usage}
+  ## Contributing
+  ${contributing}
+  ## Tests
+  ${test}
+  ## Questions
+  ${lb}
+  ${ll}
+  ${ls}
+  
 Contact me at: ${email}.
 My Github is at [GitHub](https://github.com/${gituser})`;
 }
@@ -68,6 +68,5 @@ module.exports = {
   renderLicenseBadge,
   renderLicenseLink,
   renderLicenseSection,
-//   makeMarkdown,
 };
 
