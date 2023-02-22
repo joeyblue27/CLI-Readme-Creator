@@ -33,33 +33,38 @@ This project is licensed under the ${license} license.
   // TODO: Create a function to generate markdown for README
   function generateMarkdown(content) {
     return `# ${content.project}
-    ${renderLicenseBadge(content.license)}
     
     ## Description
     ${content.description}
     ## Table of Contents 
-
+    
     * [Installation](#installation)
     ${content.installation}
     
     * [Usage](#usage)
-
+    
     ${content.usage}
-
+    
     * [Contributing](#contributing)
 
     ${content.contributing}
-
+    
     * [Tests](#tests)
     
     ${content.test}
- 
+    
   ${renderLicenseSection(content.license)}
   ${renderLicenseLink(content.license)}
-
+  ${renderLicenseBadge(content.license)}
   
-Contact me at: ${content.email}.
-My Github is at (https://github.com/${content.gituser})`;
+  
+Contact me at ${
+    content.email
+  }. My Github is at [${content.gituser}](https://github.com/${
+    content.gituser
+  }/).
+
+`;
 }
 
 module.exports = 

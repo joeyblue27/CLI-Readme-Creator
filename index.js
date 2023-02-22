@@ -68,8 +68,8 @@ return inquirer.prompt ([
   
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
-  fs.writeFile(fileName, data, function(){});
-  console.log('Creating Readme File');
+  fs.writeFileSync(fileName, data) ;
+  console.log('Creating Readme')
 }
 // TODO: Create a function to initialize app
 function init() {
