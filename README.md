@@ -1,8 +1,8 @@
 # Readme Creator
     
-    ## Description
+    # Description
     readme creator from CLI
-    ## Table of Contents 
+ 
     
     * [Installation](#installation)
     npm i
