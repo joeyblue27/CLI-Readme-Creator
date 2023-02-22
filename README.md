@@ -1,29 +1,28 @@
-# 
-  
-  readme creator
-  # Description
-  this is a readme creator from CLI
-  ## Table of Contents
-  * [Installation](#installation)
-  * [Usage](#usage)
-  * [Contributing](#contributing)
-  * [Tests](#tests)
-  * [Questions](#questions)
-  ## Installation
-  npm i
-  ## Usage
-  javascript
+# readme creator
+    
+    # Description
+    readme creator from cli
+    ## Table of Contents
+    * [Installation](#installation)
+    * [Usage](#usage)
+    * [Contributing](#contributing)
+    * [Tests](#tests)
+    * [Questions](#questions)
+    ## Installation
+    npm i
+    ## Usage
+  node js
   ## Contributing
-  npm install dependencies
+  install dependencies
   ## Tests
   npm test
   ## Questions
-  
-![GitHub license](https://img.shields.io/badge/license-GPL-blue.svg)
-
-  * [License](#license)
   ## License
 This project is licensed under the GPL license.
+
+  * [License](#license)
+  
+![GitHub license](https://img.shields.io/badge/license-GPL-blue.svg)
 
   
 Contact me at: joeyblue27@gmail.com.
