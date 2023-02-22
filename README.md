@@ -1,29 +1,32 @@
-# readme creator
+# jrtd
     
-    # Description
-    readme creator from cli
-    ## Table of Contents
+![GitHub license](https://img.shields.io/badge/license-APACHE-blue.svg)
+
+    
+    ## Description
+    jr
+    ## Table of Contents 
+
     * [Installation](#installation)
-    * [Usage](#usage)
-    * [Contributing](#contributing)
-    * [Tests](#tests)
-    * [Questions](#questions)
-    ## Installation
     npm i
-    ## Usage
-  node js
-  ## Contributing
-  install dependencies
-  ## Tests
-  npm test
-  ## Questions
+    
+    * [Usage](#usage)
+
+    s
+
+    * [Contributing](#contributing)
+
+    jr
+
+    * [Tests](#tests)
+    
+    npm test
+ 
   ## License
-This project is licensed under the GPL license.
+This project is licensed under the APACHE license.
 
   * [License](#license)
-  
-![GitHub license](https://img.shields.io/badge/license-GPL-blue.svg)
 
   
-Contact me at: joeyblue27@gmail.com.
-My Github is at [GitHub](https://github.com/undefined)
+Contact me at: j.
+My Github is at (https://github.com/undefined)

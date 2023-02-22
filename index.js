@@ -19,8 +19,8 @@ return inquirer.prompt ([
     },
     {
       type: "input",
-      message: "What is your GitHub username?",
-      name: "gitname"
+      name: "gitname",
+      message: "What is your GitHub username?"
   },
     {
       type: 'input',
@@ -74,8 +74,8 @@ function writeToFile(fileName, data) {
 // TODO: Create a function to initialize app
 function init() {
   questions()
-  .then((data) => writeToFile("README.md", generateMarkdown.generateMarkdown(data)))
+  .then((data) => writeToFile("README.md", generateMarkdown(data)))
 
 }
-// Function call to initialize app
+
 init();
