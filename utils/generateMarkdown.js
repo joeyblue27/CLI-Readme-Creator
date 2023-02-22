@@ -29,44 +29,40 @@ This project is licensed under the ${license} license.
   return '';
   }
 
-
-// TODO: Create a function to generate markdown for README
-function generateMarkdown({license, project, description, installation, usage, contributing, test, email, gituser}) {
-  ls = renderLicenseSection(license);
-  lb = renderLicenseBadge(license);
-  ll = renderLicenseLink(license);
-  return `# 
   
-  ${project}
-  # Description
-  ${description}
-  ## Table of Contents
-  * [Installation](#installation)
-  * [Usage](#usage)
-  * [Contributing](#contributing)
-  * [Tests](#tests)
-  * [Questions](#questions)
-  ## Installation
-  ${installation}
-  ## Usage
-  ${usage}
+  // TODO: Create a function to generate markdown for README
+  function generateMarkdown(content) {
+    return `# ${content.project}
+    
+    # Description
+    ${content.description}
+    ## Table of Contents
+    * [Installation](#installation)
+    * [Usage](#usage)
+    * [Contributing](#contributing)
+    * [Tests](#tests)
+    * [Questions](#questions)
+    ## Installation
+    ${content.installation}
+    ## Usage
+  ${content.usage}
   ## Contributing
-  ${contributing}
+  ${content.contributing}
   ## Tests
-  ${test}
+  ${content.test}
   ## Questions
-  ${lb}
-  ${ll}
-  ${ls}
+  ${renderLicenseSection(content.license)}
+  ${renderLicenseLink(content.license)}
+  ${renderLicenseBadge(content.license)}
   
-Contact me at: ${email}.
-My Github is at [GitHub](https://github.com/${gituser})`;
+Contact me at: ${content.email}.
+My Github is at [GitHub](https://github.com/${content.gituser})`;
 }
 
 module.exports = {
   generateMarkdown,
-  renderLicenseBadge,
   renderLicenseLink,
   renderLicenseSection,
+  renderLicenseBadge
 };
 
