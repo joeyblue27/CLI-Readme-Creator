@@ -2,7 +2,7 @@
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
   if (license !== null) {
-      return `
+    return `
 ![GitHub license](https://img.shields.io/badge/license-${license}-blue.svg)
 `;
   }
@@ -13,9 +13,9 @@ function renderLicenseBadge(license) {
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
   if (license !== null) {
-      return `* [License](#license)`;
-}
-return '';
+    return `* [License](#license)`;
+  }
+  return '';
 }
 
 // TODO: Create a function that returns the license section of README
@@ -25,52 +25,41 @@ function renderLicenseSection(license) {
     return `## License
 This project is licensed under the ${license} license.
 `;
-  } 
-  return '';
   }
-
-  
-  // TODO: Create a function to generate markdown for README
-  function generateMarkdown(content) {
-    return `# ${content.project}
-    
-    ## Description
-    ${content.description}
-    ## Table of Contents 
-    
-    * [Installation](#installation)
-    ${content.installation}
-    
-    * [Usage](#usage)
-    
-    ${content.usage}
-    
-    * [Contributing](#contributing)
-
-    ${content.contributing}
-    
-    * [Tests](#tests)
-    
-    ${content.test}
-    
-  ${renderLicenseSection(content.license)}
-  ${renderLicenseLink(content.license)}
-  ${renderLicenseBadge(content.license)}
-  
-  
-Contact me at ${
-    content.email
-  }. My Github is at [${content.gituser}](https://github.com/${
-    content.gituser
-  }/).
-
-`;
+  return '';
 }
 
-module.exports = 
+
+// TODO: Create a function to generate markdown for README
+function generateMarkdown(content) {
+  return `# ${content.project}
+${renderLicenseBadge(content.license)}
+## Description
+${content.description}
+## Table of Contents 
+* [Installation](#installation)
+* [Usage](#usage)
+${renderLicenseLink(content.license)}
+* [Contributing](#contributing)
+* [Tests](#tests)
+* [Questions](#questions)
+## Installation
+${content.installation}
+## Usage
+${content.usage}
+${renderLicenseSection(content.license)}
+## Contributing
+${content.contributing}
+## Tests
+${content.test}
+* Contact info: ${content.email}. 
+* Github:(https://github.com/${content.gituser}/).`;
+}
+
+module.exports =
   generateMarkdown,
   renderLicenseLink,
   renderLicenseSection,
   renderLicenseBadge
-;
+  ;
 

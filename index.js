@@ -19,7 +19,7 @@ return inquirer.prompt ([
     },
     {
       type: "input",
-      name: "gitname",
+      name: "gituser",
       message: "What is your GitHub username?"
   },
     {
@@ -69,7 +69,7 @@ return inquirer.prompt ([
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
   fs.writeFileSync(fileName, data) ;
-  console.log('Creating Readme')
+  console.log('Creating Readme!')
 }
 // TODO: Create a function to initialize app
 function init() {
