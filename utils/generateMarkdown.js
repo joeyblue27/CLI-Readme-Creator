@@ -34,7 +34,7 @@ This project is licensed under the ${license} license.
 function generateMarkdown(content) {
   return `# ${content.project}
 ${renderLicenseBadge(content.license)}
-## Description
+# Description
 ${content.description}
 ## Table of Contents 
 * [Installation](#installation)
@@ -52,8 +52,9 @@ ${renderLicenseSection(content.license)}
 ${content.contributing}
 ## Tests
 ${content.test}
-* Contact info: ${content.email}. 
-* Github:(https://github.com/${content.gituser}/).`;
+## Contacts
+* Email: ${content.email} 
+* GitHub: ${content.gituser}`;
 }
 
 module.exports =

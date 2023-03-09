@@ -1,9 +1,9 @@
-# Readme Creator
+# Readme Compiler
 
 ![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)
 
-## Description
-readme creator from CLI
+# Description
+Use node command to Generate Readme file
 ## Table of Contents 
 * [Installation](#installation)
 * [Usage](#usage)
@@ -14,13 +14,14 @@ readme creator from CLI
 ## Installation
 npm i
 ## Usage
-javascript
+CLI node 
 ## License
 This project is licensed under the MIT license.
 
 ## Contributing
-install dependencies
+CLI node readme 
 ## Tests
 npm test
-* Contact info: joeyblue27@gmail.com. 
-* Github:(https://github.com/joeyblue27/).
+## Contact
+* Email: Joeyblue27@gmail.com 
+* GitHub: https://github.com/joeyblue27
