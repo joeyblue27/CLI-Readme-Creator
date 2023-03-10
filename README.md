@@ -25,3 +25,5 @@ npm test
 ## Contacts
 * Email: Joeyblue27@gmail.com 
 * GitHub: https://github.com/joeyblue27/CLI-Readme-Creator
+## Walkthrough
+* Video: https://drive.google.com/file/d/1aSleXIiuvmGNnkxZbN3QPKTAdRqwcarw/view?usp=share_link
